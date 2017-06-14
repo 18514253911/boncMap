@@ -166,7 +166,7 @@ export default {
       width: 24px;
       height: 46px;
       padding: 0 5px;
-      background-image: url(../image/close.png);
+      background-image: url(../../image/close.png);
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -193,7 +193,7 @@ export default {
       width: 24px;
       height: 40px;
       padding: 0 5px;
-      background-image: url(../image/spread.png);
+      background-image: url(../../image/spread.png);
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -204,7 +204,7 @@ export default {
       width: 24px;
       height: 40px;
       padding: 0 5px;
-      background-image: url(../image/fold.png);
+      background-image: url(../../image/fold.png);
       background-repeat: no-repeat;
       background-position: center;
     }
