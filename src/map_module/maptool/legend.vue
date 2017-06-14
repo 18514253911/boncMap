@@ -122,7 +122,7 @@ export default {
       if (this.$refs.legendContainer.children.length === 0) {
         let legendEl = window.document.createElement('div');
         legendEl.id = this.elId;
-        legendEl.classList.add('legend');
+        legendEl.className = 'legend';
         this.$refs.legendContainer.appendChild(legendEl);
       }
       let _this = this;
