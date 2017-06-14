@@ -5,17 +5,43 @@ import Legend from './src/map_module/maptool/legend';
 // 地图工具
 import MapTool from './src/map_module/maptool/maptool';
 // 所有的工具
-import MapToolItems from './src/map_module/maptool/toolbar';
-//　地图类型（矢量、影像）
+import {
+  FullExtent,
+  FullScreen,
+  ISearchBoard,
+  ISearch,
+  LocationBoard,
+  Location,
+  Measurement,
+  MeasurementBoard,
+  RenderClear,
+  SearchBoard,
+  Search,
+  ZoomIn,
+  ZoomOut
+} from './src/map_module/maptool/toolbar';
+// 地图类型（矢量、影像）
 import MapType from './src/map_module/maptool/mapType';
 // 鹰眼
 import OverViewMap from './src/map_module/maptool/overviewMap';
 
-export default {
+export {
   EsriMap,
   Legend,
   MapTool,
-  ...MapToolItems,
   MapType,
-  OverViewMap
+  OverViewMap,
+  FullExtent,
+  FullScreen,
+  ISearchBoard,
+  ISearch,
+  LocationBoard,
+  Location,
+  Measurement,
+  MeasurementBoard,
+  RenderClear,
+  SearchBoard,
+  Search,
+  ZoomIn,
+  ZoomOut
 };
