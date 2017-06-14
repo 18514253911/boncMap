@@ -1,0 +1,21 @@
+{
+  "name": " BoncMapModule",
+  "version": "1.0.0",
+  "description": "A Vue.js esri map",
+  "author": "yanchanglu <513894105@qq.com>",
+  "dependencies": {
+    "vue": "^2.3.2"
+  },
+  "devDependencies": {
+    "esri-loader": "^0.1.3"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
