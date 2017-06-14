@@ -66,5 +66,4 @@ const install = function(Vue) {
   components.map(component => {
     Vue.component(component.name, component);
   });
-  alert(123);
 };

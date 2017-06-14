@@ -1,6 +1,6 @@
 {
   "name": " bonc-map-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Vue.js esri map",
   "author": "yanchanglu <513894105@qq.com>",
   "dependencies": {
