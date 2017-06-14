@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-  name: 'locationBoard',
+  name: 'LocationBoard',
   data() {
     return {
       msg: 'locationBoard'

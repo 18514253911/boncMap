@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'fullExtent',
+  name: 'FullExtent',
   data() {
     return {
       msg: 'full-extent'

@@ -40,5 +40,31 @@ export {
   SearchBoard,
   Search,
   ZoomIn,
+  ZoomOut,
+  install
+};
+var components = [
+  EsriMap,
+  Legend,
+  MapType,
+  OverViewMap,
+  FullExtent,
+  FullScreen,
+  ISearchBoard,
+  ISearch,
+  LocationBoard,
+  Location,
+  Measurement,
+  MeasurementBoard,
+  RenderClear,
+  SearchBoard,
+  Search,
+  ZoomIn,
   ZoomOut
+];
+const install = function(Vue) {
+  components.map(component => {
+    Vue.component(component.name, component);
+  });
+  alert(123);
 };

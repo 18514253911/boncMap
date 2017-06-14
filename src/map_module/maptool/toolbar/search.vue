@@ -8,7 +8,7 @@
 import '../../bmap/bmapLoader';
 import dashboard from './search-board';
 export default {
-    name: 'search',
+    name: 'Search',
     data() {
         return {
             dashboard,

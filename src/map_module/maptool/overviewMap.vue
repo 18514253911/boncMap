@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name: 'overview',
+  name: 'OverViewMap',
   data() {
     return {
       isLoaderAdded: false,

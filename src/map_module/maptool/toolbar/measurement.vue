@@ -7,7 +7,7 @@
 <script>
 import dashboard from './measure-board';
 export default {
-  name: 'measurement',
+  name: 'Measurement',
   data() {
     return {
       dashboard,

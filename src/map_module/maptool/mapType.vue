@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'mapType',
+  name: 'MapType',
   data() {
     return {
       active: 'normal'

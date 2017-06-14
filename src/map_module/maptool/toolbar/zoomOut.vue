@@ -6,7 +6,7 @@
 </template>
 <script>
   export default {
-    name: 'zoomOut',
+    name: 'ZoomOut',
     data() {
       return {
         msg: 'zoonOut'

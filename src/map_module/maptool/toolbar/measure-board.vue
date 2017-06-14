@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'measureBoard',
+    name: 'MeasurementBoard',
     data() {
         return {
             meg: 'measure board'

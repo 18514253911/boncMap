@@ -36,7 +36,7 @@
 import * as esriLoader from 'esri-loader';
 
 export default {
-  name: 'esrimap',
+  name: 'EsriMap',
   data() {
     return {
       esriLoader: esriLoader,
@@ -88,16 +88,16 @@ export default {
     let _self = this;
     this.$events.$on('barItemClick', (barConfig) => {
       // 这里判断是否为i键查询功能
-      if (barConfig.vmName === 'iSearch') {
+      if (barConfig.vmName === 'ISearch') {
         if (!this.mapClickEvent) {
           // 控制激活的样式
-          this.toolObject['iSearch'].active = true;
+          this.toolObject['ISearch'].active = true;
           // 如果是i键查询功能，则通过控制curVmName的值来控制i键查询的结果展示面板
           _self.curVmName = '';
           this.mapClickEvent = this.activeMapClick();
         } else {
           // 控制激活的样式
-          this.toolObject['iSearch'].active = false;
+          this.toolObject['ISearch'].active = false;
           this.mapClickEvent.remove();
           this.mapClickEvent = null;
         }
@@ -115,17 +115,17 @@ export default {
   methods: {
     // 地图点击之后，获取到查询结果，并进行展示
     isearchResultShow(result) {
-      this.toolObject['iSearch'].getLayers();
-      this.toolObject['iSearch'].resultData = result;
-      this.curVmName = 'iSearch';
+      this.toolObject['ISearch'].getLayers();
+      this.toolObject['ISearch'].resultData = result;
+      this.curVmName = 'ISearch';
     },
     // 地图点击事件激活
     activeMapClick() {
       var _self = this;
       let handle = this.map.on('click', function (e) {
-        var currentInfo = _self.toolObject['iSearch'].currentInfo;
+        var currentInfo = _self.toolObject['ISearch'].currentInfo;
         _self.$emit('mapClikc', e, currentInfo.currentUrl);
-      }); // _self.toolObject['iSearch'].activeMapClick;
+      }); // _self.toolObject['ISearch'].activeMapClick;
       return handle;
     },
     loadEsriAPI: function () {

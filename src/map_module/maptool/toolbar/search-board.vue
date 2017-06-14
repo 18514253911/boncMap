@@ -32,7 +32,7 @@ import pointLabel8 from '../../image/map/search/red_8.png';
 import pointLabel9 from '../../image/map/search/red_9.png';
 import pointLabel10 from '../../image/map/search/red_10.png';
 export default {
-    name: 'searchBoard',
+    name: 'SearchBoard',
     data() {
         return {
             msg: 'search-board',

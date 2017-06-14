@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'renderClear',
+  name: 'RenderClear',
   data() {
     return {
       msg: 'render-clear'

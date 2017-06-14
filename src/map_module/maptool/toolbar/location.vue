@@ -6,7 +6,7 @@
 <script>
 import dashboard from './location-board';
 export default {
-  name: 'location',
+  name: 'Location',
   data() {
     return {
       dashboard,

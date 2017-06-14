@@ -6,7 +6,7 @@
 <script>
   import dashboard from './iSearch-board';
   export default{
-    name: 'iSearch',
+    name: 'ISearch',
     props: {
       mapConfig: {
         map: {

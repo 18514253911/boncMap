@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: 'mapLegend',
+  name: 'Legend',
   data() {
     return {
       isLoaderAdded: false,
