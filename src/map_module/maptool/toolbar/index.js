@@ -25,7 +25,7 @@ import ZoomIn from './zoomIn';
 // 缩小
 import ZoomOut from './zoomOut';
 
-export default {
+export {
   FullExtent,
   FullScreen,
   ISearchBoard,

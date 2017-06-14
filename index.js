@@ -2,8 +2,6 @@
 import EsriMap from './src/map_module/map/esrimap';
 // 图例
 import Legend from './src/map_module/maptool/legend';
-// 地图工具
-import MapTool from './src/map_module/maptool/maptool';
 // 所有的工具
 import {
   FullExtent,
@@ -28,7 +26,6 @@ import OverViewMap from './src/map_module/maptool/overviewMap';
 export {
   EsriMap,
   Legend,
-  MapTool,
   MapType,
   OverViewMap,
   FullExtent,

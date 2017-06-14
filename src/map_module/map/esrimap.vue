@@ -34,7 +34,6 @@
 
 <script>
 import * as esriLoader from 'esri-loader';
-import Extention from '../../../../assets/js/Extention.js';
 
 export default {
   name: 'esrimap',
@@ -42,7 +41,6 @@ export default {
     return {
       esriLoader: esriLoader,
       map: null,
-      extention: Extention,
       isloaded: false,
       curVmName: '',
       toolObject: {},
@@ -58,6 +56,9 @@ export default {
     isAddBaseMap: {
       type: Boolean,
       default: true
+    },
+    extention: {
+      type: Object
     }
   },
   computed: {
@@ -212,7 +213,7 @@ export default {
 <style>
 @import 'https://js.arcgis.com/3.19/esri/css/esri.css';
 @import 'https://js.arcgis.com/3.19/dijit/themes/claro/claro.css';
-  @import '../maptool.css';
+@import '../maptool.css';
 </style>
 <style lang="stylus" rel="stylesheet/stylus">
   .map-container
