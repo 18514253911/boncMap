@@ -149,10 +149,8 @@ export default {
     position: relative;
     height: 46px;
     background-color: white;
-    background: -webkit-linear-gradient(to top, #1f3559, #172234);
-    background: -o-linear-gradient(to top, #1f3559, #172234);
-    background: -moz-linear-gradient(to top, #1f3559, #172234);
     background: linear-gradient(to top, #1f3559, #172234);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a162c', endColorstr='#0a2f4d', GradientType=0);
     font-size: 16px;
     color: #fff;
     .info-window-title-value {
