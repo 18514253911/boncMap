@@ -126,15 +126,10 @@ export default {
         if (!this.mapConfig.map.featureLegend) {
           this.mapConfig.map.featureLegend = new this.arcgisClass.Legend({
             map: _this.mapConfig.map,
-            layerInfos: [layInfos[0]]
+            layerInfos: layInfos
           }, _this.elId);
-          debugger;
           this.mapConfig.map.featureLegend.startup();
-          setTimeout(() => {
-            this.initMapLegend(layInfos);
-          }, 3000);
         } else {
-          debugger;
           this.mapConfig.map.featureLegend.layerInfos = layInfos;
           this.mapConfig.map.featureLegend.refresh();
         }
