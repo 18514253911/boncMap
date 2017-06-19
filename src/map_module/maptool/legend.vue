@@ -115,10 +115,6 @@ export default {
       });
     },
     initMapLegend: function (layInfos) {
-      if (this.mapConfig.map.featureLegend) {
-        this.mapConfig.map.featureLegend.destroy();
-        this.mapConfig.map.featureLegend = null;
-      }
       if (this.$refs.legendContainer.children.length === 0) {
         let legendEl = window.document.createElement('div');
         legendEl.id = this.elId;
@@ -127,11 +123,21 @@ export default {
       }
       let _this = this;
       this.$nextTick(function () {
-        this.mapConfig.map.featureLegend = new this.arcgisClass.Legend({
-          map: _this.mapConfig.map,
-          layerInfos: layInfos
-        }, _this.elId);
-        this.mapConfig.map.featureLegend.startup();
+        if (!this.mapConfig.map.featureLegend) {
+          this.mapConfig.map.featureLegend = new this.arcgisClass.Legend({
+            map: _this.mapConfig.map,
+            layerInfos: [layInfos[0]]
+          }, _this.elId);
+          debugger;
+          this.mapConfig.map.featureLegend.startup();
+          setTimeout(() => {
+            this.initMapLegend(layInfos);
+          }, 3000);
+        } else {
+          debugger;
+          this.mapConfig.map.featureLegend.layerInfos = layInfos;
+          this.mapConfig.map.featureLegend.refresh();
+        }
         this.isLoaderAdded = true;
       });
     },
