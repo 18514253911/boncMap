@@ -59,6 +59,10 @@ export default {
     },
     extention: {
       type: Object
+    },
+    proxyUrl: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -146,6 +150,9 @@ export default {
     },
     initMap: function () {
       this.esriLoader.dojoRequire(['esri/map', 'esri/geometry/Extent', 'tdlib/TianDiTuLayer', 'esri/tasks/query', 'esri/tasks/QueryTask'], (Map, Extent, TianDiTuLayer, Query, QueryTask) => {
+        if (this.proxyUrl) {
+          esriConfig.defaults.io.proxyUrl = this.proxyUrl;
+        }
         this.map = new Map(this.elId, { // 主map
           extent: new Extent(this.extention),
           logo: false,
