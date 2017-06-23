@@ -63,7 +63,8 @@ var components = [
   ZoomOut
 ];
 const install = function(Vue) {
-  components.map(function(component) {
+  for (var i = 0; i < components.length; i++) {
+    var component = components[i];
     Vue.component(component.name, component);
-  });
+  }
 };
