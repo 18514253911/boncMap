@@ -62,7 +62,7 @@ var components = [
   ZoomIn,
   ZoomOut
 ];
-const install = function(Vue) {
+var install = function(Vue) {
   for (var i = 0; i < components.length; i++) {
     var component = components[i];
     Vue.component(component.name, component);
