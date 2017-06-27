@@ -86,7 +86,6 @@ export default {
           return;
       }
       let { baseMapName, baseLabelName } = this.layers[currentTypeName];
-      debugger;
       this.mapConfig.esriLoader.dojoRequire(['esri/map', 'esri/geometry/Extent', 'tdlib/TianDiTuLayer'], (Map, Extent, TianDiTuLayer) => {
         let baseMapLayer = new TianDiTuLayer(baseMapName, {
           id: 'baseMap'
